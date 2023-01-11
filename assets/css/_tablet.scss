@@ -8,7 +8,7 @@
         grid-template-areas:
 
         "prom prom prom"
-        "naveg none logo"
+        "logo none naveg"
         ;
     }
 
@@ -31,4 +31,17 @@
     .user{
         display: none;
     }
+}
+
+#informacion__principal{
+    width: 768px;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    row-gap: 5px;
+    grid-template-areas:
+
+    "imagen textoIn"
+    ;
 }
