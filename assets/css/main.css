@@ -39,7 +39,15 @@ body {
 }
 
 .encabezado__titulo {
-  grid-area: textoIn;
+  grid-area: texto;
+}
+
+.titulo__objetivos {
+  grid-area: textobj;
+}
+
+.objetivos__list {
+  grid-area: objetivos;
 }
 
 .promocional {
@@ -61,6 +69,18 @@ body {
 }
 .navbar .nav-link {
   color: aliceblue;
+}
+
+#division__objetivos {
+  background-color: rgba(240, 248, 255, 0.329);
+}
+#division__objetivos h3 {
+  font-size: 38.5px;
+  font-weight: 800;
+}
+
+footer {
+  background-color: #fc664f;
 }
 
 @media only screen and (min-width: 375px) {
@@ -87,41 +107,95 @@ body {
   .user {
     display: none;
   }
+  #informacion__principal {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    grid-template-areas: "imagen" "textoIn";
+  }
+  #informacion__principal .foto__inspiracional {
+    display: flex;
+    justify-content: center;
+  }
+  #informacion__principal .foto__inspiracional .foto__prin {
+    width: 340px;
+  }
+  #informacion__principal .encabezado {
+    width: 320px;
+    margin-left: 30px;
+  }
+  #informacion__principal .encabezado h2 {
+    width: 100%;
+    font-size: 20.7px;
+    font-weight: bold;
+  }
+  #informacion__principal .encabezado h1 {
+    font-size: 38.5px;
+    font-weight: 800;
+  }
+  #informacion__principal .encabezado p {
+    font-size: 14.5px;
+    line-height: 19px;
+    text-align: justify;
+  }
+  #division__objetivos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(4fr);
+    row-gap: 30px;
+    grid-template-areas: "textobj" "objetivos" "objetivos" "objetivos";
+  }
+  #division__objetivos .titulo__objetivos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  #division__objetivos .objetivos__list {
+    width: 100%;
+    display: flex;
+    display: block;
+    justify-content: center;
+  }
+  #division__objetivos .objetivos__list img {
+    width: 370px;
+  }
+  #division__objetivos .objetivos__list h4 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #division__objetivos .objetivos__list p {
+    width: 340px;
+    font-size: 14.5px;
+    margin-left: 20px;
+    text-align: justify;
+  }
+  #division__objetivos .objetivos__list .servicio__online {
+    margin-top: 10px;
+  }
+  #division__objetivos .objetivos__list .aumento__ranking {
+    margin-top: 50px;
+  }
+  #division__objetivos .objetivos__list .avanzar {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .footer p {
+    width: 340px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
-#informacion__principal {
-  width: 375px;
-  display: grid;
-  margin-top: 30px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr;
-  row-gap: 5px;
-  grid-template-areas: "imagen" "textoIn";
-}
-#informacion__principal .foto__inspiracional {
-  display: flex;
-  justify-content: center;
-}
-#informacion__principal .foto__inspiracional .foto__prin {
-  width: 340px;
-}
-#informacion__principal .encabezado {
-  width: 320px;
-  margin-left: 30px;
-}
-#informacion__principal .encabezado h2 {
-  width: 100%;
-  font-size: 20.7px;
-  font-weight: bold;
-}
-#informacion__principal .encabezado h1 {
-  font-size: 38.5px;
-  font-weight: 800;
-}
-#informacion__principal .encabezado p {
-  font-size: 14.5px;
-  line-height: 19px;
-}
-
 @media only screen and (min-width: 768px) {
   #navegador {
     width: 100%;
@@ -129,10 +203,11 @@ body {
     grid-template-columns: 0.4fr 0.8fr 0.3fr;
     grid-template-rows: 40px 2fr;
     row-gap: 20px;
-    grid-template-areas: "prom prom prom" "logo none naveg";
+    grid-template-areas: "prom prom prom" "naveg none logo";
   }
   .promocional p {
     width: 650px;
+    font-size: 18px;
     line-height: 13px;
   }
   .mi__logo {
@@ -145,17 +220,82 @@ body {
   .user {
     display: none;
   }
+  #informacion__principal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    row-gap: 5px;
+    grid-template-areas: "imagen textoIn";
+  }
+  #informacion__principal .foto__inspiracional {
+    display: flex;
+    justify-content: center;
+  }
+  #informacion__principal .foto__inspiracional .foto__prin {
+    width: 400px;
+  }
+  #informacion__principal .encabezado {
+    width: 320px;
+    margin-top: 100px;
+  }
+  #division__objetivos {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(4fr);
+    row-gap: 30px;
+    grid-template-areas: "textobj" "objetivos" "objetivos" "objetivos";
+  }
+  #division__objetivos .titulo__objetivos {
+    margin-top: 40px;
+  }
+  #division__objetivos .objetivos__list {
+    width: 100%;
+  }
+  #division__objetivos .objetivos__list img {
+    width: 370px;
+  }
+  #division__objetivos .objetivos__list h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #division__objetivos .objetivos__list p {
+    font-size: 14.5px;
+    text-align: justify;
+  }
+  #division__objetivos .objetivos__list .servicio__online {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  #division__objetivos .objetivos__list .aumento__ranking {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  #division__objetivos .objetivos__list .avanzar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .footer p {
+    width: 750px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
-#informacion__principal {
-  width: 768px;
-  display: grid;
-  margin-top: 30px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
-  row-gap: 5px;
-  grid-template-areas: "imagen textoIn";
-}
-
 @media only screen and (min-width: 1280px) {
   #navegador {
     width: 100%;
@@ -168,6 +308,7 @@ body {
   .promocional p {
     width: 650px;
     line-height: 13px;
+    font-size: 18px;
   }
   .mi__logo {
     margin: 8px 15px;
@@ -197,4 +338,93 @@ body {
   .user .login {
     width: 40px;
   }
+  #informacion__principal {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen textoIn";
+  }
+  #informacion__principal .foto__inspiracional .foto__prin {
+    width: 700px;
+  }
+  #informacion__principal .encabezado {
+    margin-top: 30px;
+    margin-right: 100px;
+    width: 600px;
+  }
+  #informacion__principal .encabezado h2 {
+    font-size: 31px;
+  }
+  #informacion__principal .encabezado h1 {
+    font-size: 58px;
+  }
+  #informacion__principal .encabezado p {
+    width: 79.5%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #division__objetivos {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    row-gap: 60px;
+    grid-template-areas: "textobj textobj textobj" "objetivos objetivos objetivos";
+  }
+  #division__objetivos .titulo__objetivos {
+    margin-top: 40px;
+  }
+  #division__objetivos .objetivos__list {
+    width: 100%;
+    display: flex;
+  }
+  #division__objetivos .objetivos__list img {
+    width: 370px;
+  }
+  #division__objetivos .objetivos__list h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  #division__objetivos .objetivos__list p {
+    font-size: 14.5px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+  #division__objetivos .objetivos__list .servicio__online {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    display: block;
+  }
+  #division__objetivos .objetivos__list .aumento__ranking {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    display: block;
+  }
+  #division__objetivos .objetivos__list .avanzar {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    display: block;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer p {
+  text-align: justify;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

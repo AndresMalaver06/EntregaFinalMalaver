@@ -41,7 +41,17 @@ body{
 }
 
 .encabezado__titulo{
-    grid-area: textoIn;
+    grid-area: texto;
 
 }
+
+.titulo__objetivos{
+    grid-area: textobj;
+}
+
+.objetivos__list{
+    grid-area: objetivos;
+}
+
+
 

@@ -32,48 +32,122 @@
     .user{
         display: none;
     }
-}
 
-#informacion__principal{
-    width: 375px;
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    row-gap: 5px;
-    grid-template-areas:
+    #informacion__principal{
+        width: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5px;
+        grid-template-areas:
 
-    "imagen"
-    "textoIn"
-    ;
+        "imagen"
+        "textoIn"
+        ;
 
-    .foto__inspiracional{
-        display: flex;
-        justify-content: center;
-        .foto__prin{
-            width: 340px;
+        .foto__inspiracional{
+            display: flex;
+            justify-content: center;
+            .foto__prin{
+                width: 340px;
+            }
+        }
+
+        .encabezado{
+            width: 320px;
+            margin-left: 30px;
+
+            h2{
+                width: 100%;
+                font-size: 20.7px;
+                font-weight: bold;
+            }
+
+            h1{
+                font-size: 38.5px;
+                font-weight: 800;
+            }
+
+            p{
+                font-size: 14.5px;
+                line-height: 19px;
+                text-align: justify;
+            }
+            
         }
     }
 
-    .encabezado{
-        width: 320px;
-        margin-left: 30px;
-
-        h2{
-            width: 100%;
-            font-size: 20.7px;
-            font-weight: bold;
-        }
-
-        h1{
-            font-size: 38.5px;
-            font-weight: 800;
-        }
-
-        p{
-            font-size: 14.5px;
-            line-height: 19px;
-        }
+    #division__objetivos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(4fr);
+        row-gap: 30px;
+        grid-template-areas: 
         
+        "textobj"
+        "objetivos"
+        "objetivos"
+        "objetivos"
+
+        ;
+
+        .titulo__objetivos{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .objetivos__list{
+            width: 100%;
+            display: flex;
+            display: block;
+            justify-content: center;
+
+            img{
+                width: 370px;
+            }
+
+            h4{
+                font-size: 35px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            p{
+                width: 340px;;
+                font-size: 14.5px;
+                margin-left: 20px;
+                text-align: justify;
+            }
+
+            .servicio__online{
+                margin-top: 10px;
+            }
+
+            .aumento__ranking{
+                margin-top: 50px;
+            }
+
+            .avanzar{
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .footer{   
+        p{
+            width: 340px;
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 15px;
+        }
     }
 }
