@@ -36,8 +36,61 @@
         display: none;
     }
 
-    
+    #contac{
 
+        width: 100%;
+        display: grid;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        
+        "texto formu"
+
+        ;
+        .texto{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .formulario{
+            display: flex;
+            justify-content: center;
+            .caja{
+                display: flex;
+                flex-direction: column;
+
+
+                .nombre{
+                    width: 100%;
+
+                    label{
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    
+                }
+
+                .correo{
+                    @extend .nombre
+                }
+
+                .mensaje{
+                    @extend .nombre
+
+                }
+
+                .boton{
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+    
     .footer{   
         p{
             width: 750px;

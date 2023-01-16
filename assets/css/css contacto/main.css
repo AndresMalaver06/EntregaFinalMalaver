@@ -56,6 +56,31 @@ body {
   color: aliceblue;
 }
 
+/* Formulario */
+.texto {
+  grid-area: texto;
+}
+
+.formulario {
+  grid-area: formu;
+}
+
+.nombre {
+  grid-area: nombr;
+}
+
+.correo {
+  grid-area: email;
+}
+
+.mensaje {
+  grid-area: mensj;
+}
+
+.boton {
+  grid-area: boton;
+}
+
 footer {
   background-color: #fc664f;
 }
@@ -85,6 +110,55 @@ footer {
   .user {
     display: none;
   }
+  /* Carrusel */
+  #carouselExampleSlidesOnly {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  /* Formulario */
+  #contac {
+    width: 100%;
+    display: grid;
+    margin-top: 50px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.35fr 0.5fr;
+    grid-template-areas: "texto" "formu";
+  }
+  #contac .texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contac .formulario .caja {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 0.2fr;
+    grid-template-areas: "nombr" "email" "mensj" "boton";
+  }
+  #contac .formulario .caja .nombre, #contac .formulario .caja .mensaje, #contac .formulario .caja .correo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #contac .formulario .caja .nombre label, #contac .formulario .caja .mensaje label, #contac .formulario .caja .correo label {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #contac .formulario .caja .boton {
+    margin-top: 10px;
+  }
+  .footer p {
+    width: 340px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /*menu y navbar*/
@@ -110,6 +184,39 @@ footer {
   }
   .user {
     display: none;
+  }
+  #contac {
+    width: 100%;
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto formu";
+  }
+  #contac .texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contac .formulario {
+    display: flex;
+    justify-content: center;
+  }
+  #contac .formulario .caja {
+    display: flex;
+    flex-direction: column;
+  }
+  #contac .formulario .caja .nombre, #contac .formulario .caja .mensaje, #contac .formulario .caja .correo {
+    width: 100%;
+  }
+  #contac .formulario .caja .nombre label, #contac .formulario .caja .mensaje label, #contac .formulario .caja .correo label {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #contac .formulario .caja .boton {
+    margin-top: 10px;
   }
   .footer p {
     width: 750px;
@@ -160,6 +267,48 @@ footer {
   }
   .user .login {
     width: 40px;
+  }
+  #carouselExampleSlidesOnly {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contac {
+    width: 1200px;
+    display: grid;
+    margin: 50px auto 30px;
+    text-align: center;
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto formu";
+  }
+  #contac .texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contac .formulario {
+    display: flex;
+    justify-content: center;
+  }
+  #contac .formulario .caja {
+    display: flex;
+    flex-direction: column;
+  }
+  #contac .formulario .caja .nombre, #contac .formulario .caja .mensaje, #contac .formulario .caja .correo {
+    width: 100%;
+  }
+  #contac .formulario .caja .nombre label, #contac .formulario .caja .mensaje label, #contac .formulario .caja .correo label {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #contac .formulario .caja .boton {
+    margin-top: 10px;
+  }
+  .footer p {
+    width: 750px;
+    margin-top: 10px;
+    font-size: 18px;
   }
 }
 .footer {

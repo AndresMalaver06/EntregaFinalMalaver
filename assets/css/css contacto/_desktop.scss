@@ -58,4 +58,72 @@
         }
     }
 
+    #carouselExampleSlidesOnly{
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contac{
+
+        width: 1200px;
+        display: grid;
+        margin: 50px auto 30px;
+        text-align: center;
+        grid-template-columns: 0.8fr 0.8fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        
+        "texto formu"
+
+        ;
+        .texto{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .formulario{
+            display: flex;
+            justify-content: center;
+            .caja{
+                display: flex;
+                flex-direction: column;
+
+
+                .nombre{
+                    width: 100%;
+
+                    label{
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    
+                }
+
+                .correo{
+                    @extend .nombre
+                }
+
+                .mensaje{
+                    @extend .nombre
+
+                }
+
+                .boton{
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+    
+    .footer{   
+        p{
+            width: 750px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+
 }

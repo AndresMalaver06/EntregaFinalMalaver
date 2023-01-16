@@ -21,6 +21,32 @@
     }
 }
 
+/* Formulario */
+
+.texto{
+    grid-area: texto;
+}
+
+.formulario{
+    grid-area: formu;
+}
+
+.nombre{
+    grid-area: nombr;
+}
+
+.correo{
+    grid-area: email;
+}
+
+.mensaje{
+    grid-area: mensj;
+}
+
+.boton{
+    grid-area: boton;
+}
+
 
 
 footer{

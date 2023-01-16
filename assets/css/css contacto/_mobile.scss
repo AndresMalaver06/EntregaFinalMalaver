@@ -36,5 +36,89 @@
         display: none;
     }
 
-    
+    /* Carrusel */
+
+    #carouselExampleSlidesOnly{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Formulario */
+
+    #contac{
+
+        width: 100%;
+        display: grid;
+        margin-top: 50px;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: .35fr .5fr;
+        grid-template-areas:
+        
+        "texto"
+        "formu"
+
+        ;
+        .texto{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .formulario{
+            .caja{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: .5fr .5fr 2fr .2fr;
+                grid-template-areas: 
+                
+                "nombr"
+                "email"
+                "mensj"
+                "boton"
+                
+                ;
+
+                .nombre{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 50px;
+                    padding-right: 50px;
+
+                    label{
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    
+                }
+
+                .correo{
+                    @extend .nombre
+                }
+
+                .mensaje{
+                    @extend .nombre
+
+                }
+
+                .boton{
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+
+    .footer{   
+        p{
+            width: 340px;
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
 }
