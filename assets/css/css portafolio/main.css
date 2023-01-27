@@ -35,6 +35,23 @@ body {
   grid-area: user;
 }
 
+.encabezado__titulo {
+  grid-area: encabezado;
+}
+
+.video__tuto {
+  grid-area: video;
+}
+
+#carrusel {
+  background-color: rgba(240, 248, 255, 0.507);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#carrusel div div h2 {
+  font-weight: 800;
+}
+
 .promocional {
   width: 100%;
   height: 50px;
@@ -85,6 +102,56 @@ footer {
   .user {
     display: none;
   }
+  #articulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.51fr 1fr;
+    row-gap: 10px;
+    grid-template-areas: ". encabezado ." ". video .";
+  }
+  #articulo .encabezado__titulo {
+    width: 310px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #articulo .encabezado__titulo .subtitulo__principal h2 {
+    font-size: 18.1px;
+    font-weight: 600;
+  }
+  #articulo .encabezado__titulo .titulo__principal {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  #articulo .encabezado__titulo .titulo__principal h1 {
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .titulo__principal p {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .parrafo__principal p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  #articulo .video__tuto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /*menu y navbar*/
@@ -116,6 +183,57 @@ footer {
     margin-top: 10px;
     font-size: 15px;
     line-height: 15px;
+  }
+  #articulo {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+    grid-template-areas: "encabezado video";
+  }
+  #articulo .encabezado__titulo {
+    width: 310px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #articulo .encabezado__titulo .subtitulo__principal h2 {
+    font-size: 18.1px;
+    font-weight: 600;
+  }
+  #articulo .encabezado__titulo .titulo__principal {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  #articulo .encabezado__titulo .titulo__principal h1 {
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .titulo__principal p {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .parrafo__principal p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  #articulo .video__tuto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -160,6 +278,62 @@ footer {
   }
   .user .login {
     width: 40px;
+  }
+  #articulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    grid-template-areas: ". encabezado video .";
+  }
+  #articulo .encabezado__titulo {
+    width: 550px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #articulo .encabezado__titulo .subtitulo__principal h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  #articulo .encabezado__titulo .titulo__principal {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  #articulo .encabezado__titulo .titulo__principal h1 {
+    margin-right: 5px;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .titulo__principal p {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  #articulo .encabezado__titulo .parrafo__principal p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #articulo .video__tuto {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  #articulo .video__tuto iframe {
+    width: 650px;
+    height: 420px;
   }
 }
 .footer {

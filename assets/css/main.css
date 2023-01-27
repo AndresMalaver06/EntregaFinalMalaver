@@ -34,13 +34,20 @@ body {
 .user {
   grid-area: user;
 }
+.user .icon__regis {
+  background-color: #220b2b;
+  border: solid 2px aliceblue;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 700;
+}
 
 /*Articulo principal primera visualizacion*/
 .foto__inspiracional {
   grid-area: imagen;
 }
 
-.encabezado__titulo {
+.encabezado {
   grid-area: texto;
 }
 
@@ -115,35 +122,35 @@ footer {
   #informacion__principal {
     width: 100%;
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 5px;
-    grid-template-areas: "imagen" "textoIn";
-  }
-  #informacion__principal .foto__inspiracional {
     display: flex;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 0.3 2fr 0.3fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    grid-template-areas: ". imagen ." ". texto .";
+  }
+  #informacion__principal .foto__inspiracional {
+    width: 100%;
+    text-align: center;
   }
   #informacion__principal .foto__inspiracional .foto__prin {
     width: 340px;
   }
   #informacion__principal .encabezado {
-    width: 320px;
-    margin-left: 30px;
+    width: 350px;
   }
   #informacion__principal .encabezado h2 {
-    width: 100%;
-    font-size: 20.7px;
+    font-size: 22.8px;
     font-weight: bold;
   }
   #informacion__principal .encabezado h1 {
-    font-size: 38.5px;
+    font-size: 42.3px;
     font-weight: 800;
   }
   #informacion__principal .encabezado p {
-    font-size: 14.5px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 18.8px;
     text-align: justify;
   }
   /* lista de objetivos */
@@ -154,24 +161,25 @@ footer {
     justify-content: center;
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: repeat(4fr);
     row-gap: 30px;
-    grid-template-areas: "textobj" "objetivos" "objetivos" "objetivos";
+    grid-template-areas: ". textobj ." ". objetivos ." ". objetivos ." ". objetivos .";
   }
   #division__objetivos .titulo__objetivos {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   #division__objetivos .objetivos__list {
-    width: 100%;
-    display: flex;
-    display: block;
-    justify-content: center;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   #division__objetivos .objetivos__list img {
-    width: 370px;
+    width: 100%;
   }
   #division__objetivos .objetivos__list h4 {
     font-size: 35px;
@@ -180,9 +188,7 @@ footer {
     margin-top: 20px;
   }
   #division__objetivos .objetivos__list p {
-    width: 340px;
     font-size: 14.5px;
-    margin-left: 20px;
     text-align: justify;
   }
   #division__objetivos .objetivos__list .servicio__online {
@@ -214,7 +220,7 @@ footer {
   }
   .promocional p {
     width: 650px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 13px;
   }
   .mi__logo {
@@ -232,58 +238,54 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 0.7fr 0.5fr;
+    grid-template-rows: 1fr;
     row-gap: 5px;
-    grid-template-areas: "imagen textoIn";
+    grid-template-areas: "imagen texto";
   }
   #informacion__principal .foto__inspiracional {
-    display: flex;
-    justify-content: center;
+    width: 100%;
   }
   #informacion__principal .foto__inspiracional .foto__prin {
-    width: 400px;
-  }
-  #informacion__principal .encabezado {
-    width: 320px;
-    margin-top: 100px;
+    width: 380px;
   }
   /* lista de objetivos */
   #division__objetivos {
     width: 100%;
     height: auto;
-    margin-top: 40px;
     margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: repeat(4fr);
-    row-gap: 30px;
-    grid-template-areas: "textobj" "objetivos" "objetivos" "objetivos";
+    grid-template-columns: 0.3fr 2fr 0.3fr;
+    grid-template-rows: 0.1fr 1fr;
+    row-gap: 5px;
+    grid-template-areas: ". textobj ." ". objetivos .";
   }
   #division__objetivos .titulo__objetivos {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   #division__objetivos .objetivos__list {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    display: block;
   }
   #division__objetivos .objetivos__list img {
-    width: 370px;
+    width: 300px;
   }
   #division__objetivos .objetivos__list h4 {
     font-size: 35px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: 30px;
+    color: #fc664f;
+    line-height: 38px;
   }
   #division__objetivos .objetivos__list p {
     font-size: 14.5px;
     text-align: justify;
   }
   #division__objetivos .objetivos__list .servicio__online, #division__objetivos .objetivos__list .avanzar, #division__objetivos .objetivos__list .aumento__ranking {
-    margin-top: 10px;
     display: flex;
     align-items: center;
   }
@@ -308,7 +310,7 @@ footer {
     grid-template-areas: "prom prom prom" "logo naveg user";
   }
   .promocional p {
-    width: 650px;
+    width: 1000px;
     line-height: 13px;
     font-size: 18px;
   }
@@ -335,7 +337,8 @@ footer {
     align-items: center;
   }
   .user .icon__regis {
-    width: 120px;
+    width: 130px;
+    height: 35px;
   }
   .user .login {
     width: 40px;
@@ -347,14 +350,12 @@ footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "imagen textoIn";
+    grid-template-areas: "imagen texto";
   }
   #informacion__principal .foto__inspiracional .foto__prin {
-    width: 700px;
+    width: 600px;
   }
   #informacion__principal .encabezado {
-    margin-top: 30px;
-    margin-right: 100px;
     width: 600px;
   }
   #informacion__principal .encabezado h2 {
@@ -380,35 +381,25 @@ footer {
     row-gap: 60px;
     grid-template-areas: "textobj textobj textobj" "objetivos objetivos objetivos";
   }
-  #division__objetivos .titulo__objetivos {
-    margin-top: 40px;
-  }
   #division__objetivos .objetivos__list {
-    width: 100%;
+    width: 400px;
     display: flex;
-  }
-  #division__objetivos .objetivos__list img {
-    width: 370px;
+    justify-content: space-around;
+    text-align: center;
   }
   #division__objetivos .objetivos__list h4 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-right: 40px;
   }
   #division__objetivos .objetivos__list p {
     font-size: 14.5px;
-    display: flex;
-    justify-content: center;
     text-align: justify;
   }
   #division__objetivos .objetivos__list .servicio__online, #division__objetivos .objetivos__list .avanzar, #division__objetivos .objetivos__list .aumento__ranking {
     width: 400px;
-    margin-top: 10px;
     display: flex;
     display: block;
+    margin: 30px;
   }
 }
 .footer {

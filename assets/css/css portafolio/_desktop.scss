@@ -58,4 +58,70 @@
         }
     }
 
+    #articulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr;
+        row-gap: 10px;
+        column-gap: 20px;
+        grid-template-areas:
+        
+        ". encabezado video ."
+        ;
+
+        .encabezado__titulo{
+            width: 550px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            .subtitulo__principal{
+                h2{
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+            }
+            .titulo__principal{
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+
+                h1{
+                    margin-right: 5px;
+                    font-size: 45px;
+                    font-weight: 800;
+
+                }
+                p{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 5px;
+                    font-size: 32px;
+                    font-weight: 800;
+                }
+            }
+            .parrafo__principal{
+                p{
+                    text-align: justify;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .video__tuto{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            iframe{
+                width: 650px;
+                height: 420px;
+            }
+        }
+    }
 }

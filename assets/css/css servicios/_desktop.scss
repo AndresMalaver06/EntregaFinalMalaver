@@ -58,4 +58,59 @@
         }
     }
 
+    //servicios//
+
+    #division__objetivos{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        row-gap: 60px;
+        grid-template-areas: 
+        
+        "textobj textobj textobj"
+        "objetivos objetivos objetivos"
+
+        ;
+
+        .objetivos__list{
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+
+            img{
+                width: 400px;
+            }
+
+            h4{
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 18px;
+                text-align: justify;
+            }
+
+            .ilustracion{
+                width: 400px;
+                display: flex;
+                display: block;
+                margin: 30px;
+                
+            }
+
+            .marca{
+                @extend .ilustracion;             
+            }
+
+            .programar{
+                @extend .ilustracion;
+            }
+        }
+    }
+
 }

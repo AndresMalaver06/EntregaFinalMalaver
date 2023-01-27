@@ -38,6 +38,27 @@ body{
     grid-area: user;
 }
 
+//articulo y video//
 
+.encabezado__titulo{
+    grid-area: encabezado;
+}
 
+.video__tuto{
+    grid-area: video;
+}
 
+//carrusel portfolio//
+
+#carrusel{
+    background-color: rgba(240, 248, 255, 0.507);
+    text-align: center;   
+    margin-bottom: 20px; 
+    div{
+        div{
+            h2{
+                font-weight: 800;
+            }
+        }
+    }
+}

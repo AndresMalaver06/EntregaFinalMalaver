@@ -38,6 +38,27 @@ body{
     grid-area: user;
 }
 
+/*Articulo portafolio*/
+
+.foto__inspiracional{
+    grid-area: imagen;
+}
+
+.encabezado{
+    grid-area: texto;
+
+}
+
+/* lista de objetivos */
+
+.titulo__objetivos{
+    grid-area: textobj;
+}
+
+.objetivos__list{
+    grid-area: objetivos;
+}
+
 
 
 

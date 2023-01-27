@@ -36,6 +36,14 @@ body{
 
 .user{
     grid-area: user;
+
+    .icon__regis{
+        background-color: #220b2b;
+        border: solid 2px aliceblue;
+        border-radius: 5px;
+        color: aliceblue;
+        font-weight: 700;
+    }
 }
 
 /*Articulo principal primera visualizacion*/
@@ -44,7 +52,7 @@ body{
     grid-area: imagen;
 }
 
-.encabezado__titulo{
+.encabezado{
     grid-area: texto;
 
 }

@@ -45,70 +45,24 @@
 
     /* Formulario */
 
-    #contac{
-
+    #formulario{
         width: 100%;
         display: grid;
-        margin-top: 50px;
-        text-align: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: .35fr .5fr;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
         grid-template-areas:
-        
-        "texto"
-        "formu"
 
+        ". logear ."
+        ". contacto ."
         ;
-        .texto{
-            width: 100%;
-            display: flex;
-            justify-content: center;
+    
+        .login{
+            width: 350px;   
         }
-
-        .formulario{
-            .caja{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: .5fr .5fr 2fr .2fr;
-                grid-template-areas: 
-                
-                "nombr"
-                "email"
-                "mensj"
-                "boton"
-                
-                ;
-
-                .nombre{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    padding-left: 50px;
-                    padding-right: 50px;
-
-                    label{
-                        display: flex;
-                        justify-content: flex-start;
-                    }
-                    
-                }
-
-                .correo{
-                    @extend .nombre
-                }
-
-                .mensaje{
-                    @extend .nombre
-
-                }
-
-                .boton{
-                    margin-top: 10px;
-                }
-            }
+    
+        .contacto{
+            width: 350px;
 
         }
     }

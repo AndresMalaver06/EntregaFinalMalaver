@@ -41,42 +41,42 @@
     #informacion__principal{
         width: 100%;
         margin-top: 30px;
+        display: flex;
+        justify-content: center;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.3 2fr 0.3fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 5px;
         grid-template-areas:
 
-        "imagen"
-        "textoIn"
+        ". imagen ."
+        ". texto ."
         ;
 
         .foto__inspiracional{
-            display: flex;
-            justify-content: center;
+            width: 100%;
+            text-align: center;
+
             .foto__prin{
                 width: 340px;
             }
         }
 
         .encabezado{
-            width: 320px;
-            margin-left: 30px;
-
+            width: 350px;
             h2{
-                width: 100%;
-                font-size: 20.7px;
+                font-size: 22.8px;
                 font-weight: bold;
             }
 
             h1{
-                font-size: 38.5px;
+                font-size: 42.3px;
                 font-weight: 800;
             }
 
             p{
-                font-size: 14.5px;
-                line-height: 19px;
+                font-size: 18px;
+                line-height: 18.8px;
                 text-align: justify;
             }
             
@@ -92,15 +92,15 @@
         justify-content: center;
         margin-bottom: 40px;
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
         grid-template-rows: repeat(4fr);
         row-gap: 30px;
         grid-template-areas: 
         
-        "textobj"
-        "objetivos"
-        "objetivos"
-        "objetivos"
+        ". textobj ."
+        ". objetivos ."
+        ". objetivos ."
+        ". objetivos ."
 
         ;
 
@@ -108,16 +108,17 @@
             margin-top: 40px;
             display: flex;
             justify-content: center;
+            text-align: center;
         }
 
         .objetivos__list{
-            width: 100%;
-            display: flex;
-            display: block;
-            justify-content: center;
+            width: 310px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
 
             img{
-                width: 370px;
+                width: 100%;
             }
 
             h4{
@@ -128,9 +129,7 @@
             }
 
             p{
-                width: 340px;;
                 font-size: 14.5px;
-                margin-left: 20px;
                 text-align: justify;
             }
 
